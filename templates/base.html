@@ -1,12 +1,14 @@
+{% load static tailwind_tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}</title>
+    {% tailwind_css %}
+    <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <main>
+    <main class="container mx-auto py-5">
         {% block content %}
         
         {% endblock %}

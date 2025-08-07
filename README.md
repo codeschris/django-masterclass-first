@@ -36,6 +36,12 @@ This is a masterclass repo where different developers work on a blog system with
    pip freeze > requirements.txt
    ```
 
+6. The project is using `django-tailwind`. To run Tailwind Watch and Django server concurrently, run:
+
+   ```bash
+   python manage.py tailwind dev
+   ```
+
 ## Contributions
 
 After cloning, create your own branch with the conventional branch name `<gh-username>-develop`, e.g. `codeschris-develop`. Make your changes from the new branch and create a PR when submitting your changes to avoid conflicts.

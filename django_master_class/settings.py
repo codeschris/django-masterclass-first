@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tailwind',
+    'theme',
+
+    # 3rd party apps
     'blogs',
 ]
 
@@ -81,6 +85,7 @@ DATABASES = {
     }
 }
 
+TAILWIND_APP_NAME = 'theme'
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

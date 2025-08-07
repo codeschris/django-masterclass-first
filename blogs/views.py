@@ -1,3 +1,8 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+def test(request):
+    return HttpResponse("Hello, this is a test response from the blogs app.")
+
+def home(request):
+    return render(request, 'pages/index.html')

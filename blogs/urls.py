@@ -1,4 +1,7 @@
-from django.http import HttpResponse
+from django.urls import path
+from .views import test, home
 
-def test(request):
-    return HttpResponse("Hello, this is a test response from the blogs app.")
+urlpatterns = [
+    path('test/', test, name='test'),
+    path('', home, name='home'),
+]
